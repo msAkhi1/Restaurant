@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Barlow+Semi+Condensed:wght@300;400;500;600&family=Great+Vibes&display=swap');
+
+/* 
+font-family: 'Anton', sans-serif;
+font-family: 'Barlow Semi Condensed', sans-serif;
+font-family: 'Great Vibes', cursive; 
+*/
+*{
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+} 
+:root{
+    --primary: #10fff3b0;
+    --secondary: #0b097741 ;
+    --dark: #010057;
+    /* Font family */
+    --heading:'Anton', sans-serif;
+    --all: 'Barlow Semi Condensed', sans-serif;
+}
+body{
+    margin: 0;
+    padding: 0;
+}
+.navbar{
+    display: flex;
+    justify-content:space-between;
+    align-items:center;
+    width:100%;
+    padding: 8px 30px;
+    background-color: var(--secondary);
+}
+.navbar ul li{
+    display: inline-block;
+}
+.navbar ul li a{
+    text-decoration:none;
+    padding:0 30px;
+    font-family: var(--all);
+    font-size: 23px;
+    color: #fff;
+}
+.navbar ul li a:hover{
+    color: rgba(238, 232, 232, 0.982) ;
+}
+
+.navbar .logo i{
+    font-size: 30px;
+    color: rgb(239, 228, 228);
+}
+
+.container{
+    background-image: url(../img/background.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+
+}
+
+.nav-button{
+    padding: 7px 15px;
+    margin: 0 20px;
+    background: var(--secondary);
+    color: aliceblue;
+    font-family: var(--all);
+    font-size: 20px;
+    border: 1px solid #fff;
+}
+.nav-button:hover{
+    background: var(--dark);
+    transition-duration: 0.7s ;
+    transform: scale(1.1);
+}
